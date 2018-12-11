@@ -43,8 +43,11 @@ public class ObjectRenderer {
 				{
 					if(((Background) obj).getState() == "Null")
 					{
+						GameObject cam=(GameObject)gm.getCamera();
+						float dposX= cam.getPosX();
+						float dposY= cam.getPosY();
 						Image i=Media.getImage(ObjectId.BACKGROUND, PlayerState.NULL, "Cemetery", 0);
-						g.drawImage(i,(int) gm.ConvertPosX(obj.getPosX()),(int) gm.ConvertPosY(obj.getPosY()),(int) gm.ConvertX(obj.getWidth()),(int) gm.ConvertY(obj.getHeight()), null);
+						g.drawImage(i,(int) dposX,(int)dposY,(int) gm.ConvertX(obj.getWidth()),(int) gm.ConvertY(obj.getHeight()), null);
 					}
 					if(((Background) obj).getState() == "Waiting")
 					{

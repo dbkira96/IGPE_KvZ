@@ -330,24 +330,25 @@ public class GameManager extends Thread implements Runnable{
 	}
 	private void checkMultiplayerInputs() throws JSONException, InterruptedException {
 		if( C.getStateClient() == "Connected" && synced) {
-			if(getEH().keys[Action.PLAYER_ATTACK.key]&& !w.getPlayer(myPlayer).isAttacking()) 
+			Player myP=w.getPlayer(myPlayer);
+			if(getEH().keys[Action.PLAYER_ATTACK.key]&& !myP.isAttacking()) 
 				C.sendMessage(new JAction(Action.PLAYER_ATTACK).toString());
-			if(getEH().keys[Action.PLAYER_MOVE_LEFT.key]&&!w.getPlayer(myPlayer).isMovingLeft()) {
+			if(getEH().keys[Action.PLAYER_MOVE_LEFT.key]&&!myP.isMovingLeft()) {
 				C.sendMessage(new JAction(Action.PLAYER_MOVE_LEFT).toString());
 			}
-			 if(getEH().keys[Action.PLAYER_MOVE_RIGHT.key]&&!w.getPlayer(myPlayer).isMovingRight()) {
+			 if(getEH().keys[Action.PLAYER_MOVE_RIGHT.key]&&!myP.isMovingRight()) {
 				C.sendMessage(new JAction(Action.PLAYER_MOVE_RIGHT).toString());
 			}
-			 if(getEH().keys[Action.PLAYER_JUMP.key] && !w.getPlayer(myPlayer).isJumping()) {
+			 if(getEH().keys[Action.PLAYER_JUMP.key] && !myP.isJumping()) {
 				C.sendMessage(new JAction(Action.PLAYER_JUMP).toString());
 			}
-			 if(getEH().keys[Action.PLAYER_CROUCH.key]&& !w.getPlayer(myPlayer).isCrouching()) {
+			 if(getEH().keys[Action.PLAYER_CROUCH.key]&& !myP.isCrouching()) {
 				C.sendMessage(new JAction(Action.PLAYER_CROUCH).toString());
 			}
-			 if(!getEH().keys[Action.PLAYER_CROUCH.key]&& w.getPlayer(myPlayer).isCrouching()) {
+			 if(!getEH().keys[Action.PLAYER_CROUCH.key]&& !myP.isJumping()&& myP.isCrouching()) {
 				C.sendMessage(new JAction(Action.PLAYER_STAND).toString());
 			}
-			 if(!w.getPlayer(myPlayer).isResting()&&!getEH().keys[Action.PLAYER_JUMP.key]&&!getEH().keys[Action.PLAYER_MOVE_RIGHT.key]&&!getEH().keys[Action.PLAYER_MOVE_LEFT.key]) {
+			 if(!myP.isResting()&&!getEH().keys[Action.PLAYER_JUMP.key]&&!getEH().keys[Action.PLAYER_MOVE_RIGHT.key]&&!getEH().keys[Action.PLAYER_MOVE_LEFT.key]) {
 				C.sendMessage(new JAction(Action.PLAYER_MOVE_REST).toString());				
 			}
 			synced=false;

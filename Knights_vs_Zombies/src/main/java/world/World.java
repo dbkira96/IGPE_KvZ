@@ -35,8 +35,8 @@ public class World extends GameObject{
 		return j;
 	}
 	public void sync(JSONObject j) {
-		width=j.getInt("width");
-		height=j.getInt("height");
+		//width=j.getInt("width");
+		//height=j.getInt("height");
 		
 		JSONArray ja= j.getJSONArray("players");
 		players.get(0).sync( ja.getJSONObject(0));

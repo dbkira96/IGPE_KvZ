@@ -3,8 +3,9 @@ package rendering;
 import java.util.LinkedList;
 
 import objects.GameObject;
+import objects.ObjectId;
 
-public class Camera  {
+public class Camera extends GameObject {
 
 	
 
@@ -53,7 +54,8 @@ public class Camera  {
 		minW=viewW-10;
 		maxW=viewW+50;
 	}
-	public Camera(GameObject w) {		
+	public Camera(GameObject w) {
+		super(0, 0, ObjectId.CAMERA);
 		holder=w;
 		anchors=new LinkedList<GameObject>();
 		maxW=holder.getWidth();
@@ -62,19 +64,11 @@ public class Camera  {
 	}
 	public void tick() {
 		if(!free) {
-			repositon();
+			
+			
 			rescale();
-			if (this.posX-viewW/2<0) 
-				posX=viewW/2;
+			repositon();
 			
-			if(this.posX+viewW/2>holder.getWidth() )
-			 posX=holder.getWidth()-viewW/2;
-			
-			if (this.posY-viewH/2<0) 
-				posY=viewH/2;
-			
-			if(this.posY+viewH/2>holder.getHeight() )
-			 posY=holder.getHeight()-viewH/2;
 		}
 	}
 	public void center() {
@@ -115,6 +109,11 @@ public class Camera  {
  }
 public void addAnchor(GameObject p) {
 	anchors.add(p);
+}
+@Override
+public void tick(LinkedList<GameObject> objects, double delta) {
+	// TODO Auto-generated method stub
+	
 }
 
 }
