@@ -1,9 +1,4 @@
-/interfaces/
-/media/
-/menus/
-/network/
-/objects/
-/rendering/
-/userInterface/
-/world/
+/META-INF/
 /gameManager/
+/media/
+/rendering/

@@ -21,15 +21,15 @@ public class SoundClip {
 	   
 	public static Volume volume = Volume.LOW;
 	   
-	public SoundClip(String soundName)
+	public SoundClip(URL sound_url)
 	{
 		this.soundName = soundName;
 		try {
 	         // Use URL (instead of File) to read from disk and JAR.
-			 System.out.println(this.getClass().getClassLoader().getResource("\\Sound\\"+soundName));
-	         URL url = this.getClass().getClassLoader().getResource("\\Sound\\"+soundName);
+			 //System.out.println(this.getClass().getClassLoader().getResource("\\Sounds\\"+soundName));
+	         //URL url = this.getClass().getClassLoader().getResource("\\Sounds\\"+soundName);
 	         // Set up an audio input stream piped from the sound file.
-	         AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(url);
+	         AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(sound_url);
 	         // Get a clip resource.
 	         clip = AudioSystem.getClip();
 	         // Open audio clip and load samples from the audio input stream.

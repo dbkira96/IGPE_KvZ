@@ -19,13 +19,16 @@ import org.json.JSONException;
 
 import interfaces.Renderable;
 import media.Media;
+import media.SoundClip;
 import menus.Menu;
 import menus.StartMenu;
 import network.Client;
 import network.Message;
 import network.Server;
 import objects.GameObject;
+import objects.ObjectId;
 import objects.Player;
+import objects.PlayerState;
 import rendering.Camera;
 import rendering.ObjectRenderer;
 import rendering.PlayerRenderer;
@@ -36,9 +39,9 @@ import world.World;
 public class GameManager extends Thread implements Runnable{
 	public static void main(String[] args) {
 		
-		
-		GameManager gm= new GameManager();
 		Media.LoadMedia();
+		Media.LoadSounds();
+		GameManager gm= new GameManager();
 		
 		gm.start();
 	}
@@ -59,7 +62,7 @@ public class GameManager extends Thread implements Runnable{
 	LinkedList<GameObject> SavedObjects;
 	
 
-	
+	SoundClip clipAudio;
 	
 	private GMEventHandler ev;
 	World w;
@@ -85,7 +88,9 @@ public class GameManager extends Thread implements Runnable{
 		this.setName("Game Manager");
 		
 		menu = new StartMenu(this);
-		
+		clipAudio = new SoundClip(Media.getSoundURL(ObjectId.BACKGROUND, PlayerState.NULL, "Cemetery"));
+		clipAudio.Play();
+		//clipAudio.Stop();
 		painter=new Painter();
 		tk = Toolkit.getDefaultToolkit();
 		initGui();

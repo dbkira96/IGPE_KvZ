@@ -43,13 +43,13 @@ public class ObjectRenderer {
 				{
 					if(((Background) obj).getState() == "Null")
 					{
-						Image i=Media.getImage(ObjectId.BACKGROUND, PlayerState.NULL, "Sky", 0);
+						Image i=Media.getImage(ObjectId.BACKGROUND, PlayerState.NULL, "Cemetery", 0);
 						g.drawImage(i,(int) gm.ConvertPosX(obj.getPosX()),(int) gm.ConvertPosY(obj.getPosY()),(int) gm.ConvertX(obj.getWidth()),(int) gm.ConvertY(obj.getHeight()), null);
 					}
 					if(((Background) obj).getState() == "Waiting")
 					{
-						Image i=Media.getImage(ObjectId.BACKGROUND, PlayerState.WAITING, "Sky", 0);
-						Image i1=Media.getImage(ObjectId.BACKGROUND, PlayerState.NULL, "Sky", 0);
+						Image i=Media.getImage(ObjectId.BACKGROUND, PlayerState.WAITING, "Cemetery", 0);
+						Image i1=Media.getImage(ObjectId.BACKGROUND, PlayerState.NULL, "Cemetery", 0);
 						g.drawImage(i1,(int) gm.ConvertPosX(obj.getPosX()),(int) gm.ConvertPosY(obj.getPosY()),(int) gm.ConvertX(obj.getWidth()),(int) gm.ConvertY(obj.getHeight()), null);
 						g.drawImage(i,(int) gm.ConvertPosX((obj.getWidth()/2)-(i.getWidth(null)/7)),(int) gm.ConvertPosY((obj.getHeight()/2)-(i.getHeight(null)/7)),(int) gm.ConvertX(i.getWidth(null)/4), (int)gm.ConvertY(i.getHeight(null)/4), null);
 					}
