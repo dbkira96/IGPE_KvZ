@@ -32,6 +32,10 @@ public class PlayerPreview extends Control {
 
 	}
 	
+	public void selectPlayer(String player) {
+		
+		selectedIndex = list.indexOf(player);
+	}
 	public String getSelectedPlayer() {return list.get(selectedIndex);}
 	
 	public void setActive(Boolean active) {this.active = active;}

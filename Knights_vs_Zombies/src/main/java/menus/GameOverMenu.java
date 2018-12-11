@@ -11,11 +11,12 @@ import rendering.ObjectRenderer;
 
 public class GameOverMenu extends Menu {
 
-	public GameOverMenu(GameManager gm) {
+	public GameOverMenu(GameManager gm , String pWin) {
 		super(gm);
 		
 		selectedIndex = 0;
 		PlayerPreview winner = new PlayerPreview(30,200, Media.getCharactersName(), true);
+		winner.selectPlayer(pWin);
 		ObjectRenderer rPreview = new ControlRenderer(winner, gm);
 
 		
@@ -23,13 +24,13 @@ public class GameOverMenu extends Menu {
 		winner.setPosY(50);
 	
 		
-		controls.add(winner);
+		//controls.add(winner);
 		renderers.add(rPreview);
 		
 		// PAUSE SELECTION MENU'
-		Control Restart = new Button(50,25,Action.START_MULTIPLAYER_GAME);
+		Control Restart = new Button(50,25,Action.BACKTOMENU);
 		ObjectRenderer RRestart = new ControlRenderer(Restart, gm);
-		Control Exit = new Button(50,25,Action.CLOSE_GAME);
+		Control Exit = new Button(50,25,Action.MENU_CLOSE_GAME);
 		ObjectRenderer RExit = new ControlRenderer(Exit, gm);
 		
 		controls.add(Restart);
@@ -45,7 +46,7 @@ public class GameOverMenu extends Menu {
 		
 		float pad = 10;
 		
-		for(int k=1; k<controls.size(); k++)
+		for(int k=0; k<controls.size(); k++)
 		{
 			controls.get(k).setPosX(posx);
 			controls.get(k).setPosY(posy +(pad*(k-1))+ (controls.get(k).getHeight()+(controls.get(k).getHeight()*(k-1))));

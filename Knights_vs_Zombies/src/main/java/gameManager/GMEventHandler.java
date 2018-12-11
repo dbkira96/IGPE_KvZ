@@ -215,23 +215,20 @@ public class GMEventHandler implements EventHandler {
 				
 				break;
 			case GAMEOVER:
-				if (gm.multiplayerGame) {
+				
 					gm.inGame=false;
-					gm.multiplayerGame=false;
-					gm.menu=new GameOverMenu(gm);
-					gm.C.close();
-					if (gm.S!=null) {
-						gm.S.close();
+					String winner=a.getString("winner");
+					gm.menu=new GameOverMenu(gm,winner);
+					if (gm.multiplayerGame) {
+						gm.multiplayerGame=false;
+						gm.C.close();
+						if (gm.S!=null) {
+							gm.S.close();
+						}
 					}
 					gm.openMenu();
-					
-				}
-				else {
-					gm.inGame=false;
-					gm.menu=new GameOverMenu(gm);
-					gm.openMenu();
-				}
-				performAction(Action.OPEN_MENU);
+				
+				
 				break;
 			default:
 				break;

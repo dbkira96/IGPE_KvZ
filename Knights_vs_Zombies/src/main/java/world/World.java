@@ -7,6 +7,7 @@ import org.json.JSONObject;
 
 import gameManager.Action;
 import gameManager.EventHandler;
+import gameManager.JAction;
 import objects.GameObject;
 import objects.ObjectId;
 import objects.Player;
@@ -92,7 +93,11 @@ public void Update(double delta) {
 		for (int i=0;i<players.size();i++){
 			Player p=players.get(i);
 			if(p.isDead()&&p.getlives()==0) {
-				ev.performAction(Action.GAMEOVER);
+				JAction a = new JAction(Action.GAMEOVER);
+				int w = 0;
+				if(i==0) {w=1;}
+				a.put("winner", players.get(w).getName());
+				ev.performAction(a);
 			}
 		}
 		for (int i=0;i<objects.size();i++) {

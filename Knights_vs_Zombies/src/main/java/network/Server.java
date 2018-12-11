@@ -6,6 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import gameManager.Action;
 import gameManager.EventHandler;
+import gameManager.JAction;
 import gameManager.Level;
 import interfaces.Direction;
 import media.Media;
@@ -43,6 +44,10 @@ public class Server extends Thread
 			@Override
 			public void performAction(Action a) {
 				ActionMessage action=new ActionMessage(a);
+				putMessage(action);
+			}
+			public void performAction(JAction a) {
+				ActionMessage action=new ActionMessage(a.toString());
 				putMessage(action);
 			}
 			@Override
