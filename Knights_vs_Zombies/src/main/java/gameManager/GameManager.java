@@ -79,6 +79,7 @@ public class GameManager extends Thread implements Runnable{
 	boolean multiplayerGame = false;
 	boolean waitingConnection = false;
 	boolean waitingChoosePlayer = false;
+	boolean synced=false;
 	public GameManager() 
 	{
 		this.setName("Game Manager");
@@ -294,6 +295,7 @@ public class GameManager extends Thread implements Runnable{
 				}
 				else if(s.compareTo("sync")==0) {
 					w.sync(m);
+					synced=true;
 				}
 			}
 		} catch (JSONException e) {
@@ -322,7 +324,7 @@ public class GameManager extends Thread implements Runnable{
 				
 	}
 	private void checkMultiplayerInputs() throws JSONException, InterruptedException {
-		if( C.getStateClient() == "Connected") {
+		if( C.getStateClient() == "Connected" && synced) {
 			if(getEH().keys[Action.PLAYER_ATTACK.key]&& !w.getPlayer(myPlayer).isAttacking()) 
 				C.sendMessage(new JAction(Action.PLAYER_ATTACK).toString());
 			if(getEH().keys[Action.PLAYER_MOVE_LEFT.key]&&!w.getPlayer(myPlayer).isMovingLeft()) {
@@ -343,6 +345,7 @@ public class GameManager extends Thread implements Runnable{
 			 if(!w.getPlayer(myPlayer).isResting()&&!getEH().keys[Action.PLAYER_JUMP.key]&&!getEH().keys[Action.PLAYER_MOVE_RIGHT.key]&&!getEH().keys[Action.PLAYER_MOVE_LEFT.key]) {
 				C.sendMessage(new JAction(Action.PLAYER_MOVE_REST).toString());				
 			}
+			synced=false;
 		}	
 	}
 	private void checkLocalGameInputs() {
@@ -378,9 +381,6 @@ public class GameManager extends Thread implements Runnable{
 		else if(!w.getPlayer(2).isResting()&&!getEH().keys[Action.PLAYER2_JUMP.key]&&!getEH().keys[Action.PLAYER2_MOVE_RIGHT.key]&&!getEH().keys[Action.PLAYER2_MOVE_LEFT.key])
 			getEH().performAction(Action.PLAYER_MOVE_REST,2);
 	}
-	
-	
-	
 	
 	public float ConvertX(float wx) {
 		return  ((wx*painter.getPanel().getWidth())/cam.getWidth()) ;
