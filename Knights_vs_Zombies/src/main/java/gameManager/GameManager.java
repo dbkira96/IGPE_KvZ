@@ -75,7 +75,7 @@ public class GameManager extends Thread implements Runnable{
 	Client C = null;
 	int myPlayer=1;
 	
-	private boolean running=false;
+	boolean running=false;
 	boolean inMenu;
 	boolean inGame=false;
 	boolean MuteSound = true;

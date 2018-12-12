@@ -3,6 +3,7 @@ package gameManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
+import java.awt.event.WindowEvent;
 import java.util.LinkedList;
 
 import org.json.JSONException;
@@ -204,6 +205,7 @@ public class GMEventHandler implements EventHandler {
 				gm.openMenu();
 				break;
 			case MENU_CLOSE_GAME:
+				gm.frame.dispatchEvent(new WindowEvent(gm.frame, WindowEvent.WINDOW_CLOSING));
 				break;
 			
 			case PLAYER_CHOOSED_MULTIPLAYER:
