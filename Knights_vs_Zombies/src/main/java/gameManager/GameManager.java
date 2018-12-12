@@ -258,6 +258,8 @@ public class GameManager extends Thread implements Runnable{
 	
 	public void checkInput() {
 		
+		if(ev.keys[KeyEvent.VK_ESCAPE])ev.performAction(Action.CLOSE_GAME);
+		
 		if(C!=null&&C.getStateClient()=="Connected") {
 			checkServerInputs();
 		}

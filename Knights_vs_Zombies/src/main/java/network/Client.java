@@ -20,7 +20,7 @@ public class Client
        
           
         // getting localhost ip 
-        InetAddress ip = InetAddress.getByName("127.0.0.1"); 
+        InetAddress ip = InetAddress.getByName("192.168.1.208"); 
           
         // establish the connection 
          s = new Socket(ip, ServerPort); 
