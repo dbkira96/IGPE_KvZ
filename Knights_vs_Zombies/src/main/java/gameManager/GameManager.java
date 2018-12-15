@@ -40,6 +40,7 @@ public class GameManager extends Thread implements Runnable{
 	public static void main(String[] args) {
 		
 		Media.LoadMedia();
+
 		Media.LoadSounds();
 		GameManager gm= new GameManager();
 		
