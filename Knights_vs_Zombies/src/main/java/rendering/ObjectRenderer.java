@@ -13,6 +13,7 @@ import objects.Button;
 import objects.GameObject;
 import objects.ObjectId;
 import objects.PlayerState;
+import objects.MyImage;
 
 public class ObjectRenderer {
 
@@ -34,6 +35,17 @@ public class ObjectRenderer {
 				if (obj instanceof Block) 
 				{
 					g.drawImage(Media.getImage(ObjectId.BLOCK, PlayerState.NULL, "Standard", 0),(int) gm.ConvertPosX(obj.getPosX()),(int) gm.ConvertPosY(obj.getPosY()), (int)gm.ConvertX(obj.getWidth()),(int) gm.ConvertY(obj.getHeight()), null);
+				}
+				else if(obj instanceof MyImage)
+				{
+					MyImage img = (MyImage)obj;
+					String  ImgId = img.getImageName();
+					if(ImgId == "Title")
+					{
+						g.drawRect(20, 20, 20, 20);
+					}
+					
+					
 				}
 				else if(obj instanceof Button) 
 				{
