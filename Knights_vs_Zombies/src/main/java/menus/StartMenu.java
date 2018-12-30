@@ -20,7 +20,7 @@ public class StartMenu extends Menu {
 		ObjectRenderer RLocal = new ControlRenderer(Local, gm);
 		Control Multiplayer = new Button(50,25,Action.MENU_START_MULTIPLAYER_GAME);
 		ObjectRenderer RMultiplayer = new ControlRenderer(Multiplayer, gm);
-		MyImage Title = new MyImage(20,40,60,70,"Title");
+		MyImage Title = new MyImage(105,10,90,110,"Title");
 		
 		Control Exit = new Button(50,25,Action.MENU_CLOSE_GAME);
 		ObjectRenderer RExit = new ControlRenderer(Exit, gm);
@@ -37,7 +37,7 @@ public class StartMenu extends Menu {
 		renderers.add(RTitle);
 
 		float posx = (width/2) - (controls.get(1).getWidth()/2);
-		float posy = (height/2) - (((controls.size()-1)/2)*controls.get(1).getHeight());
+		float posy = (height/2) - (((controls.size()-1)/2)*controls.get(1).getHeight())+20;
 		
 		float pad = 10;
 		

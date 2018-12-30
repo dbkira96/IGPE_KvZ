@@ -42,7 +42,7 @@ public class ObjectRenderer {
 					String  ImgId = img.getImageName();
 					if(ImgId == "Title")
 					{
-						g.drawRect(20, 20, 20, 20);
+						g.drawImage(Media.getImage(ObjectId.IMAGE, PlayerState.NULL, "Title", 0), (int)gm.ConvertPosX(obj.getPosX()),(int) gm.ConvertPosY(obj.getPosY()),(int) gm.ConvertX(obj.getWidth()), (int)gm.ConvertY(obj.getHeight()), null);
 					}
 					
 					

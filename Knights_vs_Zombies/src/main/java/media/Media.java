@@ -25,6 +25,7 @@ public final class Media
 	static HashMap<String, HashMap<PlayerState, LinkedList<Image>>> Blocks;
 	static HashMap<String, HashMap<PlayerState, LinkedList<Image>>> Buttons;
 	static HashMap<String, HashMap<PlayerState, LinkedList<Image>>> Backgrounds;
+	static HashMap<String, HashMap<PlayerState, LinkedList<Image>>> GameImages;
 
 	//Sounds Object
 	static HashMap<String, HashMap<PlayerState, LinkedList<URL>>> CharactersSounds;
@@ -208,7 +209,7 @@ public final class Media
 		HashMap<String, HashMap<PlayerState, LinkedList<Image>>> Blocks;
 		HashMap<String, HashMap<PlayerState, LinkedList<Image>>> Buttons;
 		HashMap<String, HashMap<PlayerState, LinkedList<Image>>> Backgrounds;
-		
+		HashMap<String, HashMap<PlayerState, LinkedList<Image>>> GameImages;
 		HashMap<String, LinkedList<String>> Levels;
 
 		//All Medias
@@ -230,6 +231,7 @@ public final class Media
 		Blocks = new HashMap<String, HashMap<PlayerState, LinkedList<Image>>>();
 		Buttons = new HashMap<String, HashMap<PlayerState, LinkedList<Image>>>();
 		Backgrounds = new HashMap<String, HashMap<PlayerState, LinkedList<Image>>>();
+		GameImages = new HashMap<String, HashMap<PlayerState, LinkedList<Image>>>();
 		
 		jsonLevel = new LinkedList<String>();
 		
@@ -343,7 +345,11 @@ public final class Media
 				{
 					Characters.put(Folders1.get(i).getName(), objectName);
 					CharacterNames.add(Folders1.get(i).getName());
-					System.out.println(Folders1.get(i).getName() + "  Aggiunto");
+					
+				}
+				else if(Folders.get(k).getName().equals("GameImages"))
+				{
+					GameImages.put(Folders1.get(i).getName(), objectName);
 				}
 				else if(Folders.get(k).getName().equals("Blocks"))
 				{
@@ -369,12 +375,14 @@ public final class Media
 		Medias.put(ObjectId.BUTTON, Buttons);
 		Medias.put(ObjectId.BACKGROUND, Backgrounds);
 		Medias.put(ObjectId.BLOCK, Blocks);
+		Medias.put(ObjectId.IMAGE,GameImages);
 		
 		Media.Medias= Medias;
 		Media.Backgrounds=Backgrounds;
 		Media.Characters=Characters;
 		Media.Buttons=Buttons;
 		Media.Blocks=Blocks;
+		Media.GameImages=GameImages;
 		
 		Media.CharacterNames=CharacterNames;
 		Media.PlayerSpecs=PlayerSpecs;
