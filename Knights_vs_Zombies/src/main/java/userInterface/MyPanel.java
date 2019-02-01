@@ -10,17 +10,18 @@ import java.util.LinkedList;
 import javax.swing.JPanel;
 
 import gameManager.GameManager;
+import interfaces.Renderable;
 import rendering.ObjectRenderer;
 
 public class MyPanel extends JPanel {
 
-	LinkedList<ObjectRenderer> renderers;
+	Renderable target;
 	
-	public void setRenderers(LinkedList<ObjectRenderer> renderers) {
-		this.renderers = renderers;
+	public void setTarget(Renderable target) {
+		this.target = target;
 	}
-	public LinkedList<ObjectRenderer> getRenderers() {
-		return renderers ;
+	public Renderable getTarget() {
+		return target ;
 	}
 	GameManager gm;
 
@@ -39,17 +40,18 @@ public class MyPanel extends JPanel {
 		//Dimension FullScreen = tk.getScreenSize();
 				
 		this.setDoubleBuffered(true);
-		this.renderers=new LinkedList<ObjectRenderer>();
+		
 		
 	}
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
+		
 		Graphics2D g2d= (Graphics2D)g;
 		g2d.translate(-gm.getCamera().getPosX(), -gm.getCamera().getPosY());
-		for(int i=0;i<renderers.size();i++) {
+		for(int i=0;i<target.getRenderers().size();i++) {
 			
-			renderers.get(i).DefaultRender(g2d);
+			target.getRenderers().get(i).DefaultRender(g2d);
 			
 		}
 		g2d.translate(0,0);

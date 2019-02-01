@@ -69,7 +69,7 @@ public class GameManager extends Thread implements Runnable{
 	World w;
 	
 	
-	Painter painter;
+	MyPanel painter;
 	Camera cam;
 	
 	Server S = null;
@@ -92,7 +92,7 @@ public class GameManager extends Thread implements Runnable{
 		clipAudio = new SoundClip(Media.getSoundURL(ObjectId.BACKGROUND, PlayerState.NULL, "Cemetery"));
 		clipAudio.Play();
 		//clipAudio.Stop();
-		painter=new Painter();
+		
 		tk = Toolkit.getDefaultToolkit();
 		initGui();
 		
@@ -123,6 +123,7 @@ public class GameManager extends Thread implements Runnable{
 		frame= new MyFrame(panelWidth,panelHeight);
 		
 		MyPanel pn=new MyPanel(this,panelWidth, panelHeight);
+		painter=pn;
 		JPanel content= new JPanel(new GridBagLayout());
 		content.setBackground(Color.BLACK);
 		
@@ -162,7 +163,7 @@ public class GameManager extends Thread implements Runnable{
 		content.add(pn,gbc);
 		
 	
-		painter.setPanel(pn);
+		
 		frame.setContentPane(content);
 		frame.setLocationRelativeTo(null);
 		//frame.pack();
@@ -392,27 +393,27 @@ public class GameManager extends Thread implements Runnable{
 	}
 	
 	public float ConvertX(float wx) {
-		return  ((wx*painter.getPanel().getWidth())/cam.getWidth()) ;
+		return  ((wx*painter.getWidth())/cam.getWidth()) ;
 		
  	}
  	public float ConvertY(float wy) {
- 		return  ((wy*painter.getPanel().getHeight())/cam.getHeight()) ;
+ 		return  ((wy*painter.getHeight())/cam.getHeight()) ;
  		
  	}
  	public float ConvertPosX(float wx) { 
- 		return (int) (((wx)*painter.getPanel().getWidth())/cam.getWidth()) ;
+ 		return (int) (((wx)*painter.getWidth())/cam.getWidth()) ;
  		
  	}
  	public float ConvertPosY(float wy) {
- 		return  (((wy)*painter.getPanel().getHeight())/cam.getHeight()) ;
+ 		return  (((wy)*painter.getHeight())/cam.getHeight()) ;
  		
  	}
  	public float ConvertPanelX(float px) {
- 		return  ((px*cam.getWidth())/painter.getPanel().getWidth()) ;
+ 		return  ((px*cam.getWidth())/painter.getWidth()) ;
  		
  	}
  	public float ConvertPanelY(float py) {
- 		return  ((py*cam.getHeight())/painter.getPanel().getHeight()) ;
+ 		return  ((py*cam.getHeight())/painter.getHeight()) ;
  	}
 	public World getWorld() {return w;}
 	

@@ -50,7 +50,13 @@ public abstract class Menu extends GameObject implements Renderable {
 		
 	}
 	public LinkedList<ObjectRenderer> getRenderers(){
+		if(!loading)
 		return renderers;
+		else {
+			LinkedList<ObjectRenderer>l=new LinkedList<ObjectRenderer>();
+			l.add(renderers.getFirst());
+			return l;
+			}
 	}
 	public void selectNext() {  
 		

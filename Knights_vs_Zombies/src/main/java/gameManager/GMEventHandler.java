@@ -33,15 +33,15 @@ public class GMEventHandler implements EventHandler {
 	private void initEH()
 	{
 		actions=new LinkedList<JAction>();
-		gm.painter.getPanel().setFocusable(true);
-		gm.painter.getPanel().requestFocusInWindow();
-		gm.painter.getPanel().addMouseListener(new MouseAdapter() {			
+		gm.painter.setFocusable(true);
+		gm.painter.requestFocusInWindow();
+		gm.painter.addMouseListener(new MouseAdapter() {			
 			
 		});
 			
 		
 	
-		gm.painter.getPanel().addKeyListener( new KeyAdapter() {
+		gm.painter.addKeyListener( new KeyAdapter() {
 			private long lastPressProcessed = 0;
 			@Override
 			public void keyPressed(KeyEvent e) {
@@ -162,8 +162,6 @@ public class GMEventHandler implements EventHandler {
 				gm.openMenu();	
 				break;
 			case PAUSE:
-				
-				
 				gm.menu=new PauseMenu(gm);
 				gm.painter.setTarget(gm.menu);	
 				break;
@@ -174,7 +172,7 @@ public class GMEventHandler implements EventHandler {
 				break;
 			case CREAPARTITA:
 				try 
-				{	
+				{	gm.menu.loading();
 					gm.S = new Server();
 					performAction(Action.PARTECIPA);
 				} catch (Exception e) {
@@ -186,8 +184,8 @@ public class GMEventHandler implements EventHandler {
 			case PARTECIPA:
 				try 
 				{
-					gm.waitingConnection = true;
 					gm.menu.loading();
+					gm.waitingConnection = true;
 					gm.openMenu();	
 					gm.C = new Client();
 				} catch (Exception e) {

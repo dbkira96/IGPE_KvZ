@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="gameManager.JAction" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/gameManager/JAction.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="87" x="37" y="591"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="gameManager.GMEventHandler" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/gameManager/GMEventHandler.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="149" width="117" x="547" y="232"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="gameManager.EventHandler" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/gameManager/EventHandler.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="103" x="17" y="677"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" name="interfaces.CanFight" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/CanFight.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="409" y="2004"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="menus.GameOverMenu" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/menus/GameOverMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1635" y="534"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="objects.Player" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/Player.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="128" y="1896"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="network.Message" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/network/Message.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="73" y="808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="gameManager.Time" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/gameManager/Time.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="611" y="54"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="9" language="java" name="interfaces.Direction" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/Direction.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="614" y="2002"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="10" language="java" name="objects.Block" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/Block.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1035" y="2363"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="gameManager.Level" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/gameManager/Level.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1026" y="1352"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="menus.ChooseMultiMenu" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/menus/ChooseMultiMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1628" y="721"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="13" language="java" name="objects.BoundingBox.Side" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/BoundingBox.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="319" y="1159"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="14" language="java" name="interfaces.Renderable" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/Renderable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1603" y="906"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="15" language="java" name="userInterface.MyFrame" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/userInterface/MyFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="597" y="476"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="menus.ChooseLocalMenu" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/menus/ChooseLocalMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1046" y="662"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="objects.GameObject" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/GameObject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="645" y="1524"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="network.ActionMessage" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/network/ActionMessage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="78" y="991"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="objects.StaticGameObject" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/StaticGameObject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="641" y="1815"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="menus.MultiStartMenu" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/menus/MultiStartMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1584" y="114"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="objects.PlayerPreview" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/PlayerPreview.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="698" y="2350"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="objects.Background" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/Background.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1601" y="1089"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="23" language="java" name="objects.ObjectId" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/ObjectId.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="780" y="2038"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="24" language="java" name="network.SyncMessage" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/network/SyncMessage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="283" y="920"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="objects.Anchor" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/Anchor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1004" y="1860"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="userInterface.Painter" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/userInterface/Painter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1055" y="42"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="menus.StartMenu" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/menus/StartMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1627" y="406"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="28" language="java" name="gameManager.Action" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/gameManager/Action.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1605" y="1996"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="29" language="java" name="world.World" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/world/World.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1041" y="1002"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="userInterface.MyPanel" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/userInterface/MyPanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1337" y="44"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="network.Connect" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/network/Connect.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="307" y="704"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="objects.Control" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/Control.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1304" y="1859"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="menus.PauseMenu" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/menus/PauseMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1620" y="267"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="network.Server" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/network/Server.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="767" y="1099"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="media.SoundClip" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/media/SoundClip.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="998" y="272"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="objects.BoundingBox" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/BoundingBox.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="495" y="967"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="37" language="java" name="interfaces.CanMove" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/CanMove.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="411" y="2145"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="38" language="java" name="rendering.Camera" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/rendering/Camera.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1329" y="1136"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="media.Media" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/media/Media.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="250" y="253"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="rendering.ObjectRenderer" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/rendering/ObjectRenderer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1244" y="250"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="rendering.PlayerRenderer" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/rendering/PlayerRenderer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1012" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="42" language="java" name="interfaces.GravityDependent" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/GravityDependent.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="347" y="1684"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="43" language="java" name="interfaces.CanCrouch" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/CanCrouch.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="380" y="1536"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="44" language="java" name="interfaces.CanJump" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/CanJump.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="329" y="1823"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="45" language="java" name="network.Client" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/network/Client.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="582" y="726"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="46" language="java" name="objects.Button" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/Button.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1322" y="2140"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="rendering.ControlRenderer" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/rendering/ControlRenderer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1602" y="-12"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="48" language="java" name="interfaces.Clickable" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/Clickable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="476" y="2423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="49" language="java" name="objects.DynamicGameObject" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/DynamicGameObject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1037" y="2108"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="50" language="java" name="network.ServerState" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/network/ServerState.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="134" y="1203"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="51" language="java" name="objects.PlayerState" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/PlayerState.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1591" y="1402"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="52" language="java" name="objects.HitBox" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/HitBox.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="401" y="1351"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="53" language="java" name="gameManager.GameManager" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/gameManager/GameManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="813" y="405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="54" language="java" name="interfaces.Drawable" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/Drawable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="334" y="2425"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="55" language="java" name="objects.MyImage" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/MyImage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1302" y="1619"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="56" language="java" name="interfaces.Collides" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/interfaces/Collides.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="417" y="2291"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="57" language="java" name="menus.Menu" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/menus/Menu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1372" y="599"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="58" language="java" name="objects.Border" project="Knights_vs_Zombies" 
+    file="/Knights_vs_Zombies/src/main/java/objects/Border.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1325" y="2353"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="59">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <dependency id="60">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="57"/>  
+  </dependency>  
+  <association id="61">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="62" name="ev"/>      
+      <multiplicity id="63" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="64">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <generalization id="65">    
+    <bendpoint x="1484" y="64"/>    
+    <bendpoint x="1480" y="248"/>    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="40"/>  
+  </generalization>  
+  <association id="66">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="67" name="R"/>      
+      <multiplicity id="68" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="69">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="70" name="facing"/>      
+      <multiplicity id="71" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <realization id="72">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="54"/>  
+  </realization>  
+  <dependency id="73">    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="74">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="75">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <association id="76">    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="77" name="obj"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="79">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="80" name="messages"/>      
+      <multiplicity id="81" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="82">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="83">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="84">    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="85">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="86">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="53"/>  
+  </dependency>  
+  <dependency id="87">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="53"/>  
+  </dependency>  
+  <dependency id="88">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <realization id="89">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="14"/>  
+  </realization>  
+  <association id="90">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="91" name="S"/>      
+      <multiplicity id="92" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="93">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="94" name="anchors"/>      
+      <multiplicity id="95" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="96">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <association id="97">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="98" name="holder"/>      
+      <multiplicity id="99" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="100">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="101">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="102">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="103">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="51"/>  
+  </dependency>  
+  <dependency id="104">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <generalization id="105">    
+    <bendpoint x="1476" y="1212"/>    
+    <bendpoint x="1466" y="1512"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <realization id="106">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="48"/>  
+  </realization>  
+  <dependency id="107">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="108">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="109" name="C"/>      
+      <multiplicity id="110" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="45" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <generalization id="111">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <realization id="112">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="54"/>  
+  </realization>  
+  <dependency id="113">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <realization id="114">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <dependency id="115">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="116">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <generalization id="117">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="118">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="119" name="cam"/>      
+      <multiplicity id="120" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="121">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <dependency id="122">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="58"/>  
+  </dependency>  
+  <dependency id="123">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="53"/>  
+  </dependency>  
+  <association id="124">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="125" name="id"/>      
+      <multiplicity id="126" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="127">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <association id="128">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="129" name="objects"/>      
+      <multiplicity id="130" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="131">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="132" name="menu"/>      
+      <multiplicity id="133" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="134">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <association id="135">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="136" name="renderers"/>      
+      <multiplicity id="137" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="138">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="139">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="140">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="141" name="lastState"/>      
+      <multiplicity id="142" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <generalization id="143">    
+    <bendpoint x="1176" y="1414"/>    
+    <bendpoint x="1190" y="994"/>    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="40"/>  
+  </generalization>  
+  <dependency id="144">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="145">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="146">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="147">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="51"/>  
+  </dependency>  
+  <dependency id="148">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <realization id="149">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="42"/>  
+  </realization>  
+  <dependency id="150">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="151">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="152">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="53"/>  
+  </dependency>  
+  <dependency id="153">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <generalization id="154">    
+    <bendpoint x="1172" y="2272"/>    
+    <bendpoint x="884" y="2270"/>    
+    <bendpoint x="882" y="1832"/>    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <generalization id="155">    
+    <bendpoint x="908" y="1188"/>    
+    <bendpoint x="904" y="1402"/>    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <dependency id="156">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <association id="157">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="158" name="act"/>      
+      <multiplicity id="159" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="160">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="53"/>  
+  </dependency>  
+  <association id="161">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="162" name="state"/>      
+      <multiplicity id="163" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="164">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="165">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="166">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="167" name="pp"/>      
+      <multiplicity id="168" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <generalization id="169">    
+    <bendpoint x="864" y="2358"/>    
+    <bendpoint x="860" y="1882"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <association id="170">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="171" name="ev"/>      
+      <multiplicity id="172" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="173">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="174">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <dependency id="175">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="176">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <nesting id="177">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="13"/>  
+  </nesting>  
+  <dependency id="178">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <association id="179">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="180" name="players"/>      
+      <multiplicity id="181" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="182">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="53"/>  
+  </dependency>  
+  <generalization id="183">    
+    <bendpoint x="278" y="2210"/>    
+    <bendpoint x="850" y="2212"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="49"/>  
+  </generalization>  
+  <dependency id="184">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <realization id="185">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <dependency id="186">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="187">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="188">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="189">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <realization id="190">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="56"/>  
+  </realization>  
+  <dependency id="191">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="51"/>  
+  </dependency>  
+  <generalization id="192">    
+    <bendpoint x="1172" y="1466"/>    
+    <bendpoint x="984" y="1474"/>    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <dependency id="193">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="194">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <association id="195">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="196" name="gm"/>      
+      <multiplicity id="197" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <generalization id="198">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="57"/>  
+  </generalization>  
+  <generalization id="199">    
+    <bendpoint x="954" y="2256"/>    
+    <bendpoint x="1192" y="2252"/>    
+    <bendpoint x="1192" y="2090"/>    
+    <bendpoint x="1202" y="2010"/>    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <dependency id="200">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="201">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="34"/>  
+  </dependency>  
+  <generalization id="202">    
+    <bendpoint x="1090" y="1776"/>    
+    <bendpoint x="878" y="1776"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <dependency id="203">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <generalization id="204">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <realization id="205">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="54"/>  
+  </realization>  
+  <association id="206">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="207" name="frame"/>      
+      <multiplicity id="208" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="209">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <association id="210">    
+    <end type="SOURCE" refId="57" navigable="false">      
+      <attribute id="211" name="background"/>      
+      <multiplicity id="212" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="213">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="214" name="actions"/>      
+      <multiplicity id="215" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="216">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <dependency id="217">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="218">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <association id="219">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="220" name="playerPreviews"/>      
+      <multiplicity id="221" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="222">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="223">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <generalization id="224">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="57"/>  
+  </generalization>  
+  <dependency id="225">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="226">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <realization id="227">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="54"/>  
+  </realization>  
+  <dependency id="228">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="58"/>  
+  </dependency>  
+  <dependency id="229">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="53"/>  
+  </dependency>  
+  <dependency id="230">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <association id="231">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="232" name="holder"/>      
+      <multiplicity id="233" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="234">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="235">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="236">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="237">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="45"/>  
+  </dependency>  
+  <association id="238">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="239" name="clients"/>      
+      <multiplicity id="240" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="241">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <association id="242">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="243" name="objects"/>      
+      <multiplicity id="244" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="245">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <association id="246">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="247" name="w"/>      
+      <multiplicity id="248" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="249">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <generalization id="250">    
+    <bendpoint x="874" y="1932"/>    
+    <bendpoint x="870" y="1858"/>    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <dependency id="251">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <dependency id="252">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <generalization id="253">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="57"/>  
+  </generalization>  
+  <dependency id="254">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="255">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="256">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="257">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="258">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="259">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="260">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="261">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <association id="262">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="263" name="SavedObjects"/>      
+      <multiplicity id="264" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="265">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="266" name="p"/>      
+      <multiplicity id="267" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="268">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="269">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <realization id="270">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <dependency id="271">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <association id="272">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="273" name="w"/>      
+      <multiplicity id="274" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="275">    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="276" name="gm"/>      
+      <multiplicity id="277" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="278">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="279">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="280">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="281">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="51"/>  
+  </dependency>  
+  <dependency id="282">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <realization id="283">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="43"/>  
+  </realization>  
+  <dependency id="284">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="285">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="286">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="287">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="288">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <realization id="289">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="44"/>  
+  </realization>  
+  <association id="290">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="291" name="worldRenderers"/>      
+      <multiplicity id="292" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="293">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="294">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <dependency id="295">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="296">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="297">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="298">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="299">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="300">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="301">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <generalization id="302">    
+    <bendpoint x="1178" y="1488"/>    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <dependency id="303">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <realization id="304">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="48"/>  
+  </realization>  
+  <dependency id="305">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="306">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="307">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <dependency id="308">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <dependency id="309">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <association id="310">    
+    <end type="SOURCE" refId="57" navigable="false">      
+      <attribute id="311" name="controls"/>      
+      <multiplicity id="312" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="313">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="32"/>  
+  </dependency>  
+  <generalization id="314">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="57"/>  
+  </generalization>  
+  <dependency id="315">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <generalization id="316">    
+    <bendpoint x="1170" y="862"/>    
+    <bendpoint x="1168" y="1224"/>    
+    <bendpoint x="900" y="1236"/>    
+    <bendpoint x="898" y="1342"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <dependency id="317">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="51"/>  
+  </dependency>  
+  <generalization id="318">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <dependency id="319">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <association id="320">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="321" name="h"/>      
+      <multiplicity id="322" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="52" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="323">    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="324" name="dir"/>      
+      <multiplicity id="325" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="326">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="327">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <generalization id="328">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="57"/>  
+  </generalization>  
+  <dependency id="329">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="330">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="331">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="332">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <dependency id="333">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="53"/>  
+  </dependency>  
+  <association id="334">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="335" name="messages"/>      
+      <multiplicity id="336" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="337">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="338" name="painter"/>      
+      <multiplicity id="339" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="340">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="341" name="act"/>      
+      <multiplicity id="342" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="343">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="344">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="345">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="346">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="347">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="348">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="349">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="350">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <association id="351">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="352" name="ev"/>      
+      <multiplicity id="353" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <generalization id="354">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="57"/>  
+  </generalization>  
+  <dependency id="355">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="356">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="357">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <association id="358">    
+    <end type="SOURCE" refId="57" navigable="false">      
+      <attribute id="359" name="renderers"/>      
+      <multiplicity id="360" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="361">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="33"/>  
+  </dependency>  
+  <dependency id="362">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="363">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="364">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="40"/>  
+  </dependency>  
+  <association id="365">    
+    <end type="SOURCE" refId="57" navigable="false">      
+      <attribute id="366" name="gm"/>      
+      <multiplicity id="367" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <association id="368">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="369" name="p"/>      
+      <multiplicity id="370" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="371">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <generalization id="372">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <dependency id="373">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="374">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <association id="375">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="376" name="clipAudio"/>      
+      <multiplicity id="377" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <dependency id="378">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <association id="379">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="380" name="gm"/>      
+      <multiplicity id="381" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="false"/>  
+  </association>  
+  <realization id="382">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="56"/>  
+  </realization>  
+  <realization id="383">    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="false"/>
+</class-diagram>
