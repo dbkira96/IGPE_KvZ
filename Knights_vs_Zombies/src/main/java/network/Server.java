@@ -34,7 +34,7 @@ public class Server extends Thread
 		Server = new ServerSocket(1234);
 		messages=new LinkedBlockingQueue<Message>();
 		initEH();
-		System.out.println("Il Server è in attesa sulla porta 4000.");
+		
 		state=ServerState.WAITING_CONNECTIONS;
 		w=new World(300,300,ev);
 		this.start();

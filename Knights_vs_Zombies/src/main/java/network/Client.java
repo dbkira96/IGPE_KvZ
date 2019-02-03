@@ -13,7 +13,7 @@ public class Client
   LinkedBlockingQueue<String> toSend;
   LinkedBlockingQueue<String> received;
   boolean running=true;
-  String serverip="192.168.1.208";
+  String serverip="127.0.0.1";
   String StateClient;
   Socket s;
   public Client(String s) throws UnknownHostException, IOException  
