@@ -10,6 +10,7 @@ import gameManager.JAction;
 import gameManager.Level;
 import interfaces.Direction;
 import media.Media;
+import menus.GameOverMenu;
 import objects.GameObject;
 import objects.Player;
 import world.World;
@@ -60,7 +61,13 @@ public class Server extends Thread
 					}else if(m.getString("type").compareTo("action")==0) {
 						ActionMessage a=new ActionMessage(m.toString());
 					switch(a.getAction()) {
+					case GAMEOVER:
 						
+						state=null;
+						putMessage(a);
+						close();
+						
+					break;
 						case CLOSE_GAME:
 							break;
 						case PLAYER_JUMP:

@@ -185,6 +185,7 @@ public class GMEventHandler implements EventHandler {
 				try 
 				{
 					gm.menu.loading();
+					
 					gm.waitingConnection = true;
 					gm.openMenu();	
 					gm.C = new Client();
