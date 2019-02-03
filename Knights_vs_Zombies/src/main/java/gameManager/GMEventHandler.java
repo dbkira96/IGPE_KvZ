@@ -6,6 +6,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.WindowEvent;
 import java.util.LinkedList;
 
+import javax.swing.JOptionPane;
+
 import org.json.JSONException;
 
 import network.Client;
@@ -174,7 +176,10 @@ public class GMEventHandler implements EventHandler {
 				try 
 				{	gm.menu.loading();
 					gm.S = new Server();
-					performAction(Action.PARTECIPA);
+					gm.menu.loading();
+					gm.waitingConnection = true;
+					gm.openMenu();	
+					gm.C = new Client();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -185,10 +190,10 @@ public class GMEventHandler implements EventHandler {
 				try 
 				{
 					gm.menu.loading();
-					
+					String ip=JOptionPane.showInputDialog("inserisci ip ");
 					gm.waitingConnection = true;
 					gm.openMenu();	
-					gm.C = new Client();
+					gm.C = new Client(ip);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

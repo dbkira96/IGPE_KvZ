@@ -13,14 +13,25 @@ public class Client
   LinkedBlockingQueue<String> toSend;
   LinkedBlockingQueue<String> received;
   boolean running=true;
+  String serverip="192.168.1.208";
   String StateClient;
   Socket s;
-    public Client() throws UnknownHostException, IOException  
+  public Client(String s) throws UnknownHostException, IOException  
+  {
+	  serverip=s;
+	  init();
+  }
+  public Client() throws UnknownHostException, IOException  
+  {
+	  init();
+  }
+  
+    public void init() throws UnknownHostException, IOException  
     { 
        
           
         // getting localhost ip 
-        InetAddress ip = InetAddress.getByName("192.168.1.208"); 
+        InetAddress ip = InetAddress.getByName(serverip); 
           
         // establish the connection 
          s = new Socket(ip, ServerPort); 
