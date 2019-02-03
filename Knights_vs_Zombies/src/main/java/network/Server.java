@@ -64,8 +64,8 @@ public class Server extends Thread
 					case GAMEOVER:
 						
 						state=null;
-						putMessage(a);
-						close();
+						sendBroadcast(a);
+						//close();
 						
 					break;
 						case CLOSE_GAME:
@@ -96,9 +96,9 @@ public class Server extends Thread
 							state=ServerState.IN_GAME;
 							break;
 						case PLAYER_CHOOSED_MULTIPLAYER:
-							if(sender==1)
+							if(sender==2)
 								w.setPlayerName(1,a.getString("playerName"));
-							else if (sender==2)
+							else if (sender==1)
 								w.setPlayerName(2,a.getString("playerName"));
 							playerSelected[sender]=true;
 							if(playerSelected[1]&&playerSelected[2]) {
